@@ -344,12 +344,16 @@ const pl4 = new THREE.PointLight(0xffffff, 0.8, 20); pl4.position.set(0, 0, 5); 
 let objGroup = null;
 let objBaseY = 0;
 
-// Load default GLB model
+// Load default GLB model, then preload others
 loadGLBModel(0, model => {
   loadedModels[0] = model;
   objGroup = model;
   objBaseY = model._baseY || 0;
   scene.add(objGroup);
+  // Preload remaining models in background
+  for (let i = 1; i < GLB_MODELS.length; i++) {
+    loadGLBModel(i, m => { loadedModels[i] = m; });
+  }
 });
 
 // Particles — two dot layers + plexus lines

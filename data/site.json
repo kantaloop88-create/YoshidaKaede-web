@@ -1,0 +1,111 @@
+{
+  "music": [
+    { "image": "images/music/20260325_raihō-shatachi.png", "title": "来訪者たち", "date": "2026/03/25", "link": "" },
+    { "image": "images/music/20251220_the_sound_of_light neighing.png", "title": "光のいななくおとがする", "date": "2025/12/20", "link": "https://linkco.re/pCggZnFE" },
+    { "image": "images/music/20260105_wakusei_you.png", "title": "惑星ユー", "date": "2026/01/05", "link": "https://t.co/eds8uwQgbW" },
+    { "image": "images/music/20250725_hōmatsu_ninary.png", "title": "泡沫二进", "date": "2025/07/25", "link": "https://big-up.style/musics/700539" },
+    { "image": "images/music/20241023_tsuki_no_tezawari.png", "title": "月のてざわり", "date": "2024/10/23", "link": "https://linkco.re/Y9h3hSZ2" }
+  ],
+
+  "movie": [
+    { "youtube": "https://youtu.be/VDnelWm7TNk?si=r4RgPxMc8S5Acg4m", "title": "来訪者たち" },
+    { "youtube": "https://youtu.be/SFh0ZRRmgys?si=aCf4G1htZN9l83Mx", "title": "萌ゆ喩" },
+    { "youtube": "https://youtu.be/P8ehJRgWfKo?si=CXCxwhnPKLm_LZA-", "title": "無限∞バイナリィ〰︎ ˆ- ̫-ˆ " },
+    { "youtube": "https://youtu.be/5ubr_KTrgKk?si=X8epmWmQGXPozcr2", "title": "みえる、きこえる" },
+    { "youtube": "https://youtu.be/GoSyqPJB7dE?si=DYAq_RSX4ZXgFmnD", "title": "砂の箱庭" },    
+    { "youtube": "https://youtu.be/PzklKfKz44k?si=gPs5AaowB7fPYklB", "title": "惑星ユー" }
+  ],
+
+  "live": [
+    { "image": "images/live/20260327_NxPC.lab*deaw().png", "title": "NxPC.lab×draw();", "date": "2026/03/27", "link": "" },
+    { "image": "images/live/20251221_sessions25sessions.png", "title": "Sessions 2025", "date": "2025/12/21", "link": "" },
+    { "image": "images/live/20251012_drawtokyo3.png", "title": "draw(tokyo);#3", "date": "2025/10/12", "link": "" },
+    { "image": "images/live/20240601_damdam.png", "title": "damdam", "date": "2024/06/01", "link": "" },
+    { "image": "images/live/20240225_tsukinoura_zatto_chikai.PNG", "title": "月の裏、雑踏、誓い", "date": "2024/06/01", "link": "" }
+  ],
+
+  "news": [
+    {
+      "image": "images/news/web.png", "date": "2026.03.20",
+      "title": "公式Webサイトオープン！",
+      "body": "よしかえ公式webサイトがオープンしました！\n\nみんなよろぴくね。"
+    },
+    {
+      "image": "images/news/vocaloid_collection_2026w.png", "date": "2026.02.23",
+      "title": "ボカコレ2026冬ルーキー部門にて、11位を獲得しました！",
+      "body": "ボカコレ2026冬ルーキー部門にて、\n楽曲「来訪者たち」で11位を獲得しました！\nhttps://www.nicovideo.jp/watch/sm45942632"
+    },
+    {
+      "image": "images/news/hatsunemiku_smallS.png", "date": "2026.01.21",
+      "title": "初音ミク × スモールエス 音楽コンテストにて、中村佑介審査員コメント賞を受賞しました！",
+      "body": "初音ミク × スモールエス 音楽コンテストにて、\n楽曲「すすむイニシャル」中村佑介審査員コメント賞を受賞しました！\nhttps://www.s-ss-s.com/c/miku-SS-winners"
+    },
+    {
+      "image": "images/news/CDs_icon.png", "date": "2026.01.05",
+      "title": "CDsのコンピレーションアルバム「CSS_Compilation1」に楽曲「惑星ユー」が採択されました！",
+      "body": "ガレリアと原口沙輔率いるCDsのコラボ企画、「Composite Sample Share」にて、\n楽曲「惑星ユー」が採択されました！https://t.co/eds8uwQgbW"
+    },
+    {
+      "image": "images/news/20251221_sessions25sessions.png", "date": "2025.12.21",
+      "title": "SESSIONS 2025 Music部門にて、審査員特別賞を受賞しました！",
+      "body": "SESSIONS 2025 Music部門にて、\nインターネットの海底ケーブルの座標データをもとに\nサウンドを生成した楽曲「光のいななくおとがする」で審査員特別賞を受賞しました！\nhttps://sessions-party.com/"
+    },
+    {
+      "image": "images/news/vocaloid_collection_2025s.png", "date": "2025.08.25",
+      "title": "ボカコレ2025夏ルーキー部門にて、57位を獲得しました！",
+      "body": "ボカコレ2025夏ルーキー部門にて、\n楽曲「無限∞バイナリィ〰︎ ˆ- ̫-ˆ」で57位を獲得しました！\nhttps://www.nicovideo.jp/watch/sm45315299"
+    },
+    {
+      "image": "images/news/vocaloid_collection_2025w.png", "date": "2025.02.24",
+      "title": "ボカコレ2025冬ルーキー部門にて、90位を獲得しました！",
+      "body": "ボカコレ2025冬ルーキー部門にて、\n楽曲「萌ゆ喩」で90位を獲得しました！\nhttps://www.nicovideo.jp/watch/sm44657497"
+    }
+  ],
+
+  "goods": [
+    { "image": "images/goods/0.png", "link": "https://suzuri.jp/Yoshidakaede_Shop" },
+    { "image": "images/goods/1.png", "link": "https://suzuri.jp/Yoshidakaede_Shop" },
+    { "image": "images/goods/2.png", "link": "https://suzuri.jp/Yoshidakaede_Shop" },
+    { "image": "images/goods/3.png", "link": "https://suzuri.jp/Yoshidakaede_Shop" },
+    { "image": "images/goods/4.png", "link": "https://suzuri.jp/Yoshidakaede_Shop" },
+    { "image": "images/goods/5.png", "link": "https://suzuri.jp/Yoshidakaede_Shop" },
+    { "image": "images/goods/6.png", "link": "https://suzuri.jp/Yoshidakaede_Shop" },
+    { "image": "images/goods/7.png", "link": "https://suzuri.jp/Yoshidakaede_Shop" }
+  ],
+
+  "bio": "コンポーザー、サウンドプログラマ。 \n映像会社でサウンドプログラマをしながら、\nボカロPとして活動しています。",
+
+  "skills": [
+  ],
+
+  "contact": [
+    {
+      "type": "email",
+      "label": "Mail",
+      "value": "kantaloop88@gmail.com",
+      "href": "mailto:kantaloop88@gmail.com"
+    },
+    {
+      "type": "discord",
+      "label": "Discord",
+      "value": "kantaloop_yoshidakaede",
+      "href": "https://discord.com/users/kantaloop_yoshidakaede"
+    }
+  ],
+
+  "social": [
+    { "type": "twitter", "href": "https://x.com/QulQulRecords" },
+    { "type": "youtube", "href": "https://www.youtube.com/@kantaloop_88" },
+    { "type": "instagram", "href": "https://www.instagram.com/kantaloop_88/" },
+    { "type": "applemusic", "href": "https://music.apple.com/jp/artist/%E5%90%89%E7%94%B0%E6%A5%93/1775593535/" },
+    { "type": "spotify", "href": "https://open.spotify.com/intl-ja/artist/0YkmeBVrUG0G9TMYpiQ3Lu" }
+  ],
+
+  "footer": { "copy": "© 2026 吉田楓 Yoshida Kaede" },
+  "model": "./models/yoshikaeChan_remesh.obj",
+
+  "models": [
+    { "thumb": null, "name": "YoshikaeC" },
+    { "thumb": null, "name": "Moyuyu" }
+  ]
+}

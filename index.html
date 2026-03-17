@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吉田楓 — Yoshida Kaede</title>
+<meta name="description" content="吉田楓 — コンポーザー・サウンドプログラマ。ボカロPとして活動中。">
+<meta property="og:title" content="吉田楓 — Yoshida Kaede">
+<meta property="og:description" content="コンポーザー・サウンドプログラマ。ボカロPとして活動中。">
+<meta property="og:image" content="images/icons/main_icon.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="吉田楓 — Yoshida Kaede">
+<meta name="twitter:description" content="コンポーザー・サウンドプログラマ。ボカロPとして活動中。">
+<meta name="twitter:image" content="images/icons/main_icon.png">
+<link rel="icon" href="images/icons/tab_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Noto+Sans+JP:wght@300;400&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js" integrity="sha384-fljlqkjWlmSFjkESkQvm77heIZpoWmXEOzlCA7kOpGUH+95Zk0yGfQieWM2q136E" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js" integrity="sha384-TNRcLasZnnfIJJskDY5XlrfmsKTjBSy98MtyLuX+3rQWRbpSQvtFIdikNpcOh3SN" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="cursor"></div>
+
+<!-- Three.js canvas — fixed behind everything -->
+<canvas id="three-canvas"></canvas>
+<!-- Halftone fade overlay -->
+<div id="halftone"></div>
+
+<nav id="nav">
+  <div class="nav-logo">吉田楓</div>
+  <ul class="nav-links">
+    <li><a href="#works">Works</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact-section">Contact</a></li>
+  </ul>
+</nav>
+
+<div id="page">
+
+  <!-- Hero — transparent bg so canvas shows through -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-kana">Sound Designer &amp; Composer</div>
+      <h1 class="hero-name">吉田<em id="kaede">楓</em></h1>
+      <p class="hero-role">Musician · Sound Artist · Engineer</p>
+      <div class="hero-social" id="heroSocial"></div>
+    </div>
+    <div class="scroll-cue"><div class="scroll-bar"></div>scroll</div>
+  </section>
+
+  <!-- Works -->
+  <div class="works-wrap" id="works">
+    <div class="sec-row">
+      <div class="sec-head rev">
+        <span class="sec-index">01</span>
+        <h2 class="sec-name">Music</h2>      </div>
+      <div class="h-scroll" id="rowMusic"></div>
+    </div>
+    <div class="sec-row">
+      <div class="sec-head rev">
+        <span class="sec-index">02</span>
+        <h2 class="sec-name">Movie</h2>      </div>
+      <div class="h-scroll" id="rowMovie"></div>
+    </div>
+    <div class="sec-row">
+      <div class="sec-head rev">
+        <span class="sec-index">03</span>
+        <h2 class="sec-name">Live</h2>      </div>
+      <div class="h-scroll" id="rowLive"></div>
+    </div>
+    <div class="sec-row">
+      <div class="sec-head rev">
+        <span class="sec-index">04</span>
+        <h2 class="sec-name">News</h2>      </div>
+      <div class="h-scroll" id="rowNews"></div>
+    </div>
+    <div class="sec-row">
+      <div class="sec-head rev">
+        <span class="sec-index">05</span>
+        <h2 class="sec-name">Goods</h2>      </div>
+      <div class="h-scroll" id="rowGoods"></div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-main">
+      <div class="about-label rev">About</div>
+      <div class="about-profile rev">
+        <img class="about-icon" src="images/icons/main_icon.png" alt="吉田楓">
+        <p class="about-bio" id="aboutBio"></p>
+      </div>
+    </div>
+    <div id="aboutSkills"></div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact-section">
+    <div>
+      <div class="contact-label rev">Contact</div>
+      <h2 class="contact-heading rev">Get in touch</h2>
+      <p class="contact-sub rev">お仕事のご依頼、コラボレーション、<br>その他のお問い合わせはこちらへ。</p>
+    </div>
+    <div class="contact-links rev" id="contactLinks"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-copy" id="footerCopy"></div>
+    <div class="footer-icons" id="footerIcons"></div>
+  </footer>
+
+</div><!-- /page -->
+
+<!-- Overlay -->
+<div id="overlay">
+  <div class="ov-box">
+    <button class="ov-close" id="ovClose">✕ close</button>
+    <div id="ovContent"></div>
+  </div>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

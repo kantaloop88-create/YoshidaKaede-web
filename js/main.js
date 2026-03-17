@@ -251,7 +251,8 @@ function switchModel(idx) {
     b.classList.toggle('active', parseInt(b.dataset.model) === idx);
   });
 
-  const currentTarget = objGroup || mesh;
+  const currentTarget = objGroup;
+  if (!currentTarget) return;
   const easeOutExpo = t => t >= 1 ? 1 : 1 - Math.pow(2, -10 * t);
 
   // Fade out current
@@ -339,13 +340,6 @@ const pl2 = new THREE.PointLight(0x41adb9, 0.6, 20); pl2.position.set(-4, -2, 2)
 const pl3 = new THREE.PointLight(0xffffff, 0.6, 20); pl3.position.set(0, 5, -3); scene.add(pl3);
 const pl4 = new THREE.PointLight(0xffffff, 0.8, 20); pl4.position.set(0, 0, 5); scene.add(pl4);
 
-// Placeholder mesh (shown while GLB loads)
-const mesh = new THREE.Mesh(
-  new THREE.TorusKnotGeometry(1.2, .3, 256, 32, 3, 5),
-  MESH_MAT
-);
-scene.add(mesh);
-
 // Active GLB model group
 let objGroup = null;
 let objBaseY = 0;
@@ -355,7 +349,6 @@ loadGLBModel(0, model => {
   loadedModels[0] = model;
   objGroup = model;
   objBaseY = model._baseY || 0;
-  scene.remove(mesh);
   scene.add(objGroup);
 });
 
@@ -500,13 +493,12 @@ document.addEventListener('mousemove', e => {
 let t = 0;
 (function tick() {
   requestAnimationFrame(tick); t += .004;
-  // Animate whichever model is active (OBJ group or fallback mesh)
-  const target = objGroup || mesh;
-  target.rotation.y = t * .22 + sY * .0015;
-  target.rotation.x = Math.sin(t * .35) * .12 + sY * .0005;
-  const baseY = (target === objGroup) ? objBaseY : 0;
-  target.position.x += (mx * .35 - target.position.x) * .05;
-  target.position.y += ((-my * .35 + baseY) - target.position.y) * .05;
+  if (objGroup) {
+    objGroup.rotation.y = t * .22 + sY * .0015;
+    objGroup.rotation.x = Math.sin(t * .35) * .12 + sY * .0005;
+    objGroup.position.x += (mx * .35 - objGroup.position.x) * .05;
+    objGroup.position.y += ((-my * .35 + objBaseY) - objGroup.position.y) * .05;
+  }
   pl1.intensity = 2.5 + Math.sin(t * 1.1) * .5;
   // Slowly drift particles
   particles1.rotation.y = t * 0.08;
